@@ -169,5 +169,5 @@ if __name__ == "__main__":
                     six.print_('Computer Wins')
                 else:
                     six.print_('It is a draw')
-    except KeyboardInterrupt:
+    except (KeyboardInterrupt, EOFError):
         pass
