@@ -155,7 +155,7 @@ if __name__ == "__main__":
             if worked and victory == 'No one':
                 game.makeAIMove()
             else:
-                print 'That is not a legal move!'
+                six.print_('That is not a legal move!')
                 
             victory = game.whoWon()
             if victory == 'No one':
@@ -164,10 +164,10 @@ if __name__ == "__main__":
                 six.print_(game)
                 game.reset()
                 if victory == 'Human':
-                    print 'Human Wins'
+                    six.print_('Human Wins')
                 elif victory == 'Cpu':
-                    print 'Computer Wins'
+                    six.print_('Computer Wins')
                 else:
-                    print 'It is a draw'
+                    six.print_('It is a draw')
     except KeyboardInterrupt:
         pass
